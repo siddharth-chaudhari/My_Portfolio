@@ -1,29 +1,29 @@
-import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { ArrowUpRight } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
     {
         id: 1,
-        title: "Ethereal Echoes",
-        category: "Creative Direction - Web Design",
+        title: "Kumss University ERP",
+        category: "ERP",
         image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
         year: "2024",
     },
     {
         id: 2,
-        title: "Neon Nexus",
-        category: "UI/UX - 3D Development",
+        title: "Real Estate",
+        category: "UI/UX CRM - 3D Development",
         image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop",
         year: "2023",
     },
     {
         id: 3,
-        title: "Aura Architecture",
-        category: "Brand Identity - Frontend",
+        title: "The Auction Arena",
+        category: "Sports - Frontend",
         image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=2655&auto=format&fit=crop",
         year: "2023",
     }

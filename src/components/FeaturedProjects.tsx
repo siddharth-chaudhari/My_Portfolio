@@ -10,22 +10,22 @@ const projects = [
         id: 1,
         title: "Kumss University ERP",
         category: "ERP",
-        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
-        year: "2024",
+        image: "/projects/kumss_erp.png",
+        year: "2026",
     },
     {
         id: 2,
         title: "Real Estate",
         category: "UI/UX CRM - 3D Development",
-        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop",
-        year: "2023",
+        image: "/projects/real_estate.png",
+        year: "2025",
     },
     {
         id: 3,
         title: "The Auction Arena",
         category: "Sports - Frontend",
-        image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=2655&auto=format&fit=crop",
-        year: "2023",
+        image: "/projects/auction_arena.png",
+        year: "2025",
     }
 ];
 

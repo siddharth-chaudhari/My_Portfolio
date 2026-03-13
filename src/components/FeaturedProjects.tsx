@@ -93,7 +93,7 @@ export default function FeaturedProjects() {
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-[400px] md:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0"
+                                className="w-full h-[400px] md:h-[600px] object-cover object-top transition-transform duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0"
                             />
                         </div>
                         <div className="w-full lg:w-2/5 flex flex-col justify-center">

@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -8,20 +8,20 @@ const testimonials = [
     {
         id: 1,
         quote: "An absolute wizard when it comes to web animations and motion design. Delivered our project ahead of schedule with flawless execution.",
-        author: "Sarah Jenkins",
-        role: "Design Director, CreativeCo"
+        author: "",
+        role: ""
     },
     {
         id: 2,
         quote: "The level of detail and polish applied to our product was unprecedented. Highly recommended for premium web experiences.",
-        author: "Michael Chang",
-        role: "Founder, NexusTech"
+        author: "",
+        role: ""
     },
     {
         id: 3,
         quote: "Brought our static designs to life in a way we couldn't have imagined. The codebase is incredibly clean and maintainable.",
-        author: "Elena Rodriguez",
-        role: "CTO, Finova"
+        author: "",
+        role: ""
     }
 ];
 

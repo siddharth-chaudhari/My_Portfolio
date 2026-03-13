@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,8 +42,8 @@ export default function Footer() {
                 <h2 ref={textRef} className="text-6xl md:text-[10rem] font-bold tracking-tighter leading-none interactable hover:text-gray-300 transition-colors cursor-pointer">
                     Let's Talk
                 </h2>
-                <a href="mailto:hello@example.com" className="mt-12 text-2xl md:text-4xl font-serif italic border-b border-gray-700 pb-2 hover:border-white transition-colors interactable">
-                    hello@example.com
+                <a href="mailto:siddharthchaudhari110@gmail.com" className="mt-12 text-2xl md:text-4xl font-serif italic border-b border-gray-700 pb-2 hover:border-white transition-colors interactable">
+                    siddharthchaudhari110@gmail.com
                 </a>
             </div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
                 </div>
 
                 <div className="flex items-center gap-8">
-                    <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Lakshya. All rights reserved.</p>
+                    <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Siddharth. All rights reserved.</p>
                     <button onClick={scrollToTop} className="interactable text-gray-400 hover:text-white transition-colors text-sm font-semibold uppercase tracking-wider hidden md:block">
                         Back to Top ↑
                     </button>

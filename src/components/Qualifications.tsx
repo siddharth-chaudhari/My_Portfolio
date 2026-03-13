@@ -1,27 +1,28 @@
-import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { Award, BookOpen, Hexagon } from 'lucide-react';
+import { BookOpen, Hexagon } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const qualifications = [
     {
         id: 1,
-        title: "B.Sc. in Computer Science",
-        institution: "Stanford University",
-        year: "2018 - 2022",
-        description: "Specialized in Human-Computer Interaction and Computer Graphics. Graduated with Honors.",
+        title: "Bachelor of Engineering in Computer Engineering",
+        institution: "Pune University",
+        year: "2021 - 2024",
+        description: "Rigorous study in software engineering, data structures, and algorithms. Built a robust foundation in full-stack development and scalable system design.",
         icon: <BookOpen className="w-6 h-6" />
     },
     {
         id: 2,
-        title: "Advanced Web Animations",
-        institution: "Awwwards Academy",
-        year: "2023",
-        description: "Masterclass on WebGL, Three.js, and advanced GSAP techniques for crafting premium web experiences.",
+        title: "Diploma in Computer Science",
+        institution: "Maharashtra State Board of Technical Education",
+        year: "2019 - 2021",
+        description: "Learned core computer science fundamentals, programming concepts, databases, and networking, gaining early hands-on experience in software development.",
         icon: <Hexagon className="w-6 h-6" />
     },
+    /*
     {
         id: 3,
         title: "Certified Cloud Practitioner",
@@ -30,6 +31,7 @@ const qualifications = [
         description: "Validated overall understanding of the AWS Cloud platform, covering foundational cloud concepts and security.",
         icon: <Award className="w-6 h-6" />
     }
+    */
 ];
 
 export default function Qualifications() {
@@ -82,7 +84,7 @@ export default function Qualifications() {
                 <h2 className="text-5xl md:text-6xl font-bold font-serif italic">Qualifications</h2>
             </div>
 
-            <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 {qualifications.map((item) => (
                     <div
                         key={item.id}

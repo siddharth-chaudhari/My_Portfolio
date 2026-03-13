@@ -1,30 +1,23 @@
-import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const experiences = [
     {
         id: 1,
-        role: "Senior Frontend Engineer",
-        company: "Vercel",
-        period: "2023 - Present",
-        description: "Leading the development of high-performance web interfaces and contributing to open-source tools. Focused on React Server Components, Next.js, and global edge infrastructure.",
+        role: "Full Stack Developer",
+        company: "DigiTech Solution",
+        period: "Dec 2025 - Present",
+        description: "Engineered a WYSIWYG Template Builder and a multi-tier Store & Procurement system for the KUMSS University ERP. Built features for a Real Estate Platform, including client-side PDF generation and real-time WhatsApp integration.",
     },
     {
         id: 2,
-        role: "Creative Developer",
-        company: "Studio Freight",
-        period: "2021 - 2023",
-        description: "Built award-winning digital experiences for global brands. Specialized in WebGL, GSAP animations, and custom scroll interactions.",
-    },
-    {
-        id: 3,
-        role: "UI Engineer",
-        company: "Stripe",
-        period: "2019 - 2021",
-        description: "Developed accessible and beautiful components for the core Stripe Dashboard. Improved performance and collaborated closely with product design.",
+        role: "Full Stack Developer Intern",
+        company: "AavidSoft",
+        period: "Apr 2025 - Nov 2025",
+        description: "Built a real-time fantasy sports auction platform using React and Redux Toolkit. Integrated WebSockets for real-time bid synchronization, supporting over 1,000+ concurrent users with sub-millisecond latency.",
     }
 ];
 

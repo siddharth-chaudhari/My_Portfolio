@@ -39,20 +39,25 @@ export default function Footer() {
         <footer ref={footerRef} className="py-24 px-6 md:px-12 lg:px-24 bg-black text-white w-full relative z-30 overflow-hidden rounded-t-[3rem] border-t border-gray-900">
             <div className="flex flex-col items-center justify-center text-center mb-20 md:mb-32">
                 <p className="text-gray-400 tracking-widest uppercase text-sm font-semibold mb-6">Have an idea?</p>
-                <h2 ref={textRef} className="text-6xl md:text-[10rem] font-bold tracking-tighter leading-none interactable hover:text-gray-300 transition-colors cursor-pointer">
+                <h2 ref={textRef} onClick={() => window.location.href = 'mailto:siddharthchaudhari110@gmail.com'} className="text-6xl md:text-[10rem] font-bold tracking-tighter leading-none interactable hover:text-gray-300 transition-colors cursor-pointer">
                     Let's Talk
                 </h2>
-                <a href="mailto:siddharthchaudhari110@gmail.com" className="mt-12 text-2xl md:text-4xl font-serif italic border-b border-gray-700 pb-2 hover:border-white transition-colors interactable">
+                <a
+                    href="mailto:siddharthchaudhari110@gmail.com"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href = 'mailto:siddharthchaudhari110@gmail.com';
+                    }}
+                    className="mt-12 text-2xl md:text-4xl font-serif italic border-b border-gray-700 pb-2 hover:border-white transition-colors interactable"
+                >
                     siddharthchaudhari110@gmail.com
                 </a>
             </div>
 
             <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800/50">
                 <div className="flex gap-8 mb-6 md:mb-0">
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors interactable text-sm font-semibold uppercase tracking-wider">Twitter</a>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors interactable text-sm font-semibold uppercase tracking-wider">LinkedIn</a>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors interactable text-sm font-semibold uppercase tracking-wider">Instagram</a>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors interactable text-sm font-semibold uppercase tracking-wider">GitHub</a>
+                    <a href="https://www.linkedin.com/in/siddharth-chaudharii/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors interactable text-sm font-semibold uppercase tracking-wider">LinkedIn</a>
+                    <a href="https://github.com/siddharth-chaudhari" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors interactable text-sm font-semibold uppercase tracking-wider">GitHub</a>
                 </div>
 
                 <div className="flex items-center gap-8">

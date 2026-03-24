@@ -12,6 +12,7 @@ const projects = [
         category: "ERP",
         image: "/projects/kumss_erp.png",
         year: "2026",
+        link: "https://github.com/siddharth-chaudhari"
     },
     {
         id: 2,
@@ -19,6 +20,7 @@ const projects = [
         category: "UI/UX CRM - 3D Development",
         image: "/projects/real_estate.png",
         year: "2025",
+        link: "https://github.com/siddharth-chaudhari"
     },
     {
         id: 3,
@@ -26,6 +28,7 @@ const projects = [
         category: "Sports - Frontend",
         image: "/projects/auction_arena.png",
         year: "2025",
+        link: "https://github.com/siddharth-chaudhari"
     }
 ];
 
@@ -80,15 +83,24 @@ export default function FeaturedProjects() {
                     <p className="text-gray-400 uppercase tracking-widest text-sm mb-4 font-semibold">Selected Work</p>
                     <h2 className="text-5xl md:text-7xl font-bold italic font-serif tracking-tight">Featured<br />Projects</h2>
                 </div>
-                <button className="interactable mt-8 md:mt-0 group flex items-center gap-3 text-lg border-b border-white pb-1 hover:text-gray-300 transition-colors">
+                <a 
+                    href="https://github.com/siddharth-chaudhari"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="interactable mt-8 md:mt-0 group flex items-center gap-3 text-lg border-b border-white pb-1 hover:text-gray-300 transition-colors"
+                >
                     View All Work
                     <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                </button>
+                </a>
             </div>
 
             <div ref={projectsRef} className="flex flex-col gap-16 md:gap-32">
                 {projects.map((project, index) => (
-                    <div key={project.id} className={`flex flex-col ${index % 2 !== 0 ? 'md:flex-col-reverse lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-16 items-center group interactable cursor-pointer`}>
+                    <div 
+                        key={project.id} 
+                        onClick={() => window.open(project.link, '_blank')}
+                        className={`flex flex-col ${index % 2 !== 0 ? 'md:flex-col-reverse lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-16 items-center group interactable cursor-pointer`}
+                    >
                         <div className="w-full lg:w-3/5 overflow-hidden rounded-xl">
                             <img
                                 src={project.image}
@@ -102,9 +114,14 @@ export default function FeaturedProjects() {
                                 <span className="text-gray-500 font-serif italic">{project.year}</span>
                             </div>
                             <h3 className="text-4xl md:text-5xl font-bold mb-6 group-hover:text-gray-300 transition-colors">{project.title}</h3>
-                            <button className="w-12 h-12 rounded-full border border-gray-600 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all">
+                            <a 
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-12 h-12 rounded-full border border-gray-600 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all"
+                            >
                                 <ArrowUpRight className="w-6 h-6" />
-                            </button>
+                            </a>
                         </div>
                     </div>
                 ))}
